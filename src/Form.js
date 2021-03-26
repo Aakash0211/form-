@@ -45,7 +45,7 @@ const [log,setLog]=useState(false)
    }
   return (
     <div style={{ textAlign:'center',
-        marginTop:150}}>
+        marginTop:113}}>
    {log ? (<Typography  variant="h4" style={{paddingBottom:20,fontWeight:'bold'}}>Log In</Typography>):((<div style={{marginRight:170}}><Typography style={{paddingBottom:5,fontWeight:'bold'}} variant="h4" >Create </Typography> 
    
     <Typography style={{paddingBottom:15,fontWeight:'bold'}} variant="h4">Account</Typography>
@@ -116,9 +116,9 @@ const [log,setLog]=useState(false)
         />
         <Typography variant="inherit">I agree to the <Typography variant="inherit" style={{color:'blue',textDecorationLine:'underline'}}>Terms & Conditions</Typography> and <Typography variant="inherit" style={{color:'blue',textDecorationLine:'underline'}}>Privacy Policy</Typography></Typography>
         </div>
-        {log ?(<Button color="primary" variant="contained" style={{padding:6,margin:7}} disabled={!checked}    type="submit">
+        {log ?(<Button color="primary" variant="contained" style={{padding:10,margin:10,width:290,maxHeight:60,borderRadius:10}} disabled={!checked}    type="submit">
           Log In
-        </Button>):(<Button color="primary"  style={{padding:10,margin:10,width:290,maxHeight:60,borderRadius:15}} variant='outlined' disabled={!checked}  type='submit'>
+        </Button>):(<Button color="primary"  style={{padding:10,margin:10,width:290,maxHeight:60,borderRadius:10}} variant='contained' disabled={!checked}  type='submit'>
           Create Account
         </Button>)}
         {!log && <Button  style={{padding:10,margin:10,width:290,maxHeight:60,borderRadius:15,borderColor:'blue'}} variant='outlined' >
